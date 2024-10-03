@@ -1,0 +1,74 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #ba4949;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease-in-out;
+}
+.custom-container {
+  width: 90%; /* Use 90% width */
+  max-width: 500px; /* Maximum width of 500px */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Optional: Adjust width for smaller screens */
+@media (max-width: 600px) {
+  .custom-container {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+.timer-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+}
+.timer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.timer-nav button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.timer-nav button.active {
+  color: #fff;
+  font-weight: bold;
+}
+#display-timer {
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#button-timer {
+  background-color: #fff;
+  border: none;
+  color: #ba4949;
+  padding: 15px 70px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+#button-timer:hover {
+  transform: translateY(-2px);
+}
+.session-count {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin-top: 20px;
+}

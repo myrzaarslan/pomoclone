@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pomodoro 🍅</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#" id="settings-button">Settings</a>
+                    <a class="nav-link" href="#" id="statistics-button">Statistics</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 custom-container text-center"> <!-- Narrow container -->
+        <div class="timer-container"></div>      
+        <!-- Task Form -->
+        <div id="task-form" class="card mb-4"> <!-- Added margin-bottom for spacing -->
+            <div class="card-body">
+                <h5 class="card-title">Add task</h5>
+                <input type="text" id="task-input" placeholder="What are you working on?" class="form-control">
+                <button id="add-task-button" type="button" class="btn btn-primary mt-2">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Clear All Tasks Section -->
+        <div id="clear-all-tasks" class="mt-4">
+            <div id="clear-tasks-div" class="alert alert-info">
+                <span>All tasks are completed!</span>
+                <button id="clear-tasks-button" class="btn btn-warning ml-2">Clear All Tasks</button>
+            </div>
+        </div>
+        
+        <!-- Task List Section -->
+        <div id="task-list"></div>
+    </div>
+    
+    <div id="root"></div>
+
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-cWm1hWiI1FwQ3zd1Gghw+5wD4UgY0Zl7sZK3FSFTuRi6CgYty4g1ULFAt9X2n2cg" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
